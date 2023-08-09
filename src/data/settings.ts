@@ -1,6 +1,6 @@
 export const settings = {
-  site: 'https://simple-blog.littlesticks.dev',
-  name: 'Simple Blog',
+  site: 'https://hilldani.github.io/',
+  name: 'Daniel Hill',
   title: 'Site title',
   description: 'Site description',
   showLittleSticksPlug: true,

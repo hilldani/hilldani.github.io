@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: How to Make Money as a Freelancer
+title: How to PMU
 image: /images/freelance
 publishedAt: "2021-01-01"
 category: 'Freelance'

@@ -1,12 +1,7 @@
 export const socials = [
-  // {
-  //   name: 'Twitter',
-  //   url: 'https://twitter.com/littlesticksdev',
-  //   icon: 'mdi:twitter'
-  // },
   {
     name: "GitHub",
-    url: "https://github.com/littlesticks",
+    url: "https://github.com/hilldani",
     icon: "mdi:github",
   },
   {
@@ -14,9 +9,4 @@ export const socials = [
     url: "https://www.linkedin.com/in/daniel-hill-1195b713a/",
     icon: "mdi:linkedin",
   },
-  // {
-  //   name: 'Instagram',
-  //   url: 'https://instagram.com',
-  //   icon: 'mdi:instagram'
-  // }
 ];
