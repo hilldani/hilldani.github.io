@@ -14,20 +14,23 @@ const seo = {
 ---
 
 <style>
-  .home-hero-text__container {
+  .home-profile__img {
     clip-path: circle();
+    margin: auto;
+    height: 10rem;
   }
-  h1 {
-    text-align: center;
-    font-size: var(--step--5);
+  .home-profile__container {
+    padding: 3rem;
   }
 </style>
 
 <Layout seo={seo}>
-  <picture class="home-hero-text__container">
-    <source srcset={"/images/danielhillprofile.webp"} type="image/webp">
-    <img class="post-preview__img" src={"/images/danielhillprofile.jpg"} alt={"Daniel Hill"} >
-  </picture>
+  <div class="home-profile__container">
+    <picture class="home-profile__container">
+      <source srcset={"/images/danielhillprofile.webp"} type="image/webp">
+      <img class="profile__img" src={"/images/danielhillprofile.jpg"} alt={"Daniel Hill"} >
+    </picture>
+  </div>
   <Container>
     <BlogPostsList posts={posts}/>
   </Container>
