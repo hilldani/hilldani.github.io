@@ -15,7 +15,7 @@ const seo = {
 
 <style>
   .home-hero-text__container {
-    padding: 5vh 0;
+    clip-path: circle();
   }
   h1 {
     text-align: center;
@@ -24,10 +24,11 @@ const seo = {
 </style>
 
 <Layout seo={seo}>
+  <picture class="home-hero-text__container">
+    <source srcset={"/images/danielhillprofile.webp"} type="image/webp">
+    <img class="post-preview__img" src={"/images/danielhillprofile.jpg"} alt={"Daniel Hill"} >
+  </picture>
   <Container>
-    <div class="home-hero-text__container">
-      <h1 class="fade-in">Blog</h1>
-    </div>
     <BlogPostsList posts={posts}/>
   </Container>
 </Layout>
