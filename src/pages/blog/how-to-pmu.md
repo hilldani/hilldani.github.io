@@ -2,7 +2,7 @@
 layout: '../../layouts/Post.astro'
 title: How to PMU
 image: /images/freelance
-publishedAt: "2021-01-01"
+publishedAt: "2023-02-05"
 category: 'PMU'
 ---
 

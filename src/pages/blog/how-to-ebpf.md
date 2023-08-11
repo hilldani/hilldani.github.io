@@ -2,7 +2,7 @@
 layout: '../../layouts/Post.astro'
 title: How to eBPF
 image: /images/photography
-publishedAt: 2023-08-10
+publishedAt: 2023-04-10
 category: 'eBPF'
 ---
 
