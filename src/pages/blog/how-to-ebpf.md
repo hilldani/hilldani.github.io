@@ -28,4 +28,4 @@ int BPF_KPROBE(tcp_sendmsg, struct sock *sk, struct msghdr *msg, size_t size)
 	return 0;
 }
 ```
-in this example we are instrumenting the tcp_sendmsg function inside of the linux kernel. Now every time any program sends a message through TCP our function gets called with all the parameters. Now we can read values like remote IP and port or even the messages (although it will be encryped if using TLS)
+In this example we are instrumenting the tcp_sendmsg function inside of the linux kernel. Now every time any program sends a message through TCP our function gets called with all the parameters. Now we can read values like remote IP and port or even the messages (although it will be encryped if using TLS)
