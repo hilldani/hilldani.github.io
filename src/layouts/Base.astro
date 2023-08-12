@@ -18,6 +18,14 @@ const { seo } = Astro.props;
     <ThemeProvider/>
     <!-- This is and experimental global fade in animation that is being worked on, enable at your own risk of some jank -->
     <!-- <FadeIn/> -->
+    <!-- Google tag (gtag.js) -->
+    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-612BEGGJ80"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-612BEGGJ80');
+    </script>
     <CreateCopyCodeButtons />
     <script>
       import '../components/CodeButtons/copy-code-button'
