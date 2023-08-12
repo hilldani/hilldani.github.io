@@ -9,4 +9,9 @@ export const socials = [
     url: "https://www.linkedin.com/in/daniel-hill-1195b713a/",
     icon: "mdi:linkedin",
   },
+  {
+    name: "Gmail",
+    url: "mailto:dhhillaz@gmail.com",
+    icon: "mdi:gmail"
+  },
 ];
