@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/Post.astro'
 title: My First Program
-image: /images/freelance
+image: /images/moon
 publishedAt: "2020-04-018"
 category: 'Hobby'
 ---
