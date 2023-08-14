@@ -5,9 +5,6 @@ image: /images/web-design
 publishedAt: 2022-09-03
 category: 'PMU'
 ---
-
-# How to perf
-
 Linux perf is a very powerful performance analysis tool. It consists of two parts:
 
 1. [Userspace Binary](#userspace-binary)

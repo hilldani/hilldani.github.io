@@ -5,9 +5,6 @@ image: /images/moon
 publishedAt: "2020-04-018"
 category: 'Hobby'
 ---
-
-## My First Program
-
 These were the first programs I made. They were made with [GameMaker](https://gamemaker.io/) when I was in highschool. Surprisingly they are still available for download at https://gamejolt.com/@Platyspy/games
 
 ## Blue Side of the Moon
