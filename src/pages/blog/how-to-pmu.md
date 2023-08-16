@@ -2,7 +2,7 @@
 layout: '../../layouts/Post.astro'
 title: How to PMU
 image: /images/freelance
-publishedAt: "2023-02-05"
+publishedAt: "2022-05-05"
 category: 'PMU'
 ---
 PMU (performance monitoring unit) is a piece of hardware on most modern cpus. There is one that sits next to each physical core on the CPU. It usually contains a set of fixed registers which can only collect one event, and general purpose registers which can be programed to increment on any hardware event.

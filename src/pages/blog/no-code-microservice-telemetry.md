@@ -2,7 +2,7 @@
 layout: '../../layouts/Post.astro'
 title: No-code Microservice Telemetry
 image: /images/network
-publishedAt: "2023-02-05"
+publishedAt: "2023-02-09"
 category: 'eBPF'
 ---
 Microservices can be one of the most complex and convoluted architectures to wrap your head around. In a monolith you know exactly what is calling what and when, but in microservices a simple API request can traverse a multitude of services before returning. This makes it especially difficult to diagnose performance issues. 
@@ -12,6 +12,7 @@ Optimizing one hot service can miss the forest for the trees.
 [Open Telemetry](https://opentelemetry.io/) and service meshes like [Istio](https://istio.io/) can help you visualize the connections but these both require code changes. Is this necessary?
 
 ## The eBPF Part
+Go here to read my [introduction to eBPF](https://hilldani.github.io/blog/how-to-ebpf/)
 
 Thanks to eBPF we can instrument the TCP stack. See [tcptop.bpf.c](https://github.com/iovisor/bcc/blob/master/libbpf-tools/tcptop.bpf.c) by Francis Laniel. We can modify this code to collect the following for every TCP packet:
 
