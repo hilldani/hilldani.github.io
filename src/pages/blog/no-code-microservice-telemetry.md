@@ -18,7 +18,7 @@ Thanks to eBPF we can instrument the TCP stack. See [tcptop.bpf.c](https://githu
 
 1. bytes sent
 2. bytes received
-3. associated PID (not 100% accurate due to skid but we'll come back to this later)
+3. associated PID (not 100% accurate due to skid but you can choose the most frequent one)
 4. source IP and port
 5. destination IP and port
 
@@ -152,3 +152,5 @@ The final visualization was built as a [React](https://react.dev/) web app using
 This is a small k8s cluster with a simple Istio gateway to a set of [nighthawk](https://github.com/envoyproxy/nighthawk) services all through [Envoy](https://github.com/envoyproxy/envoy)
 
 This setup can now be dropped onto any system and instantly visualize all TCP traffic mapped to processes
+
+The full source code I wrote is here: https://github.com/intel/workloadbreakdown
