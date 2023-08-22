@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/Post.astro'
 title: Big O vs Reality
-image: /images/network
+image: /images/reality
 publishedAt: "2023-02-09"
 category: 'eBPF'
 ---
