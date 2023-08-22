@@ -2,8 +2,8 @@
 layout: '../../layouts/Post.astro'
 title: Big O vs Reality
 image: /images/reality
-publishedAt: "2023-02-09"
-category: 'eBPF'
+publishedAt: "2023-06-12"
+category: 'PMU'
 ---
 Performance engineering is often split into three groups:
 
