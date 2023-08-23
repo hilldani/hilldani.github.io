@@ -11,7 +11,7 @@ Performance engineering is often split into three groups:
 2. Deployment
 3. Hardware
 
-Each group works independantly to make a workload as fast as possible. Software folks look at big O complexity. Deployment folks try to pick the best OS's, containers, and geo distributions. Hardware folk try to pick the fastest hardware with the lowest power requirements (classic power in money out machine). Each discipline is valuable angle but has tunnel vision on the complete picture of performance engineering.
+Each group works independently to make a workload as fast as possible. Software folks look at big O complexity. Deployment folks try to pick the best OS's, containers, and geo distributions. Hardware folk try to pick the fastest hardware with the lowest power requirements (classic power in money out machine). Each discipline is valuable angle but has tunnel vision on the complete picture of performance engineering.
 
 Teaching observability as integral to the software process can solve this problem. Take for example the task of JSON processing. Many software developers address this problem from a big O perspect. Just for java alone there is a litany of solutions:
 * [avaje-jsonb](https://github.com/avaje/avaje-jsonb)
@@ -41,7 +41,7 @@ Teaching observability as integral to the software process can solve this proble
 However few software developers see it from a hardware perspective. Recent vectorized instruction sets can perform massive operations in parallel which used to be sequential (see [SIMDJSON](https://github.com/simdjson/simdjson)). Lets try to solve this knowledge gap. Flamegraphs, a visualization made popular by Brendan Gregg, are often used to characterize software.
 
 <picture>
-<img src="https://www.brendangregg.com/FlameGraphs/cpu-bash-flamegraph.svg" type="image/gif" loading="eager" class="post-content__img">
+<img src="https://user-images.githubusercontent.com/86739774/262723936-c4150c50-2701-49ce-9fc3-f24df7ccdb22.svg" type="image/gif" loading="eager" class="post-content__img">
 </picture>
 
 The data for this chart can be collected with the following perf command
@@ -53,4 +53,10 @@ But this doesn't show any hardware insights. Let's monitor instruction pipeline 
 sudo perf record -F 99 -ag -e "{cycles,instructions}" sleep 60
 ```
 
-This samples collapsed stacks, cpu-cycles, and instructions approximately 99 times a second (can be less if the cpu is in a power saving state). Now if we regenerate the graph but color by CPI (cycles per instructions) we can see what parts of our code flow quickly through the CPU and quick are less efficient and require more cpu-cycles to complete.
+This samples collapsed stacks, cpu-cycles, and instructions approximately 99 times a second (can be less if the cpu is in a power saving state). Now if we regenerate the graph but color by CPI (cycles per instructions) we can see what parts of our code flow quickly through the CPU and which are less efficient and require more cpu-cycles to complete.
+
+<picture>
+<img src="https://user-images.githubusercontent.com/86739774/262725788-3af22cee-c76d-437f-af46-096a8b85d0a9.svg" type="image/gif" loading="eager" class="post-content__img">
+</picture>
+
+Originally it looked like the stress-ng processes should be the targets of optimization but now it becomes clear IO is causing major cpu stall inside the Node process. Flamegraphs show where you're CPU spends the most time but don't convey which areas have the highest potential for improvement.

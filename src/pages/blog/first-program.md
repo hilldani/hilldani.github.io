@@ -22,7 +22,7 @@ The hardest part of this game is getting past the instruction manual.
 </video>
 
 ## Misairu 3
-Misairu means missle in Japanese. There was no misairu 1 or 2. 
+Misairu means missile in Japanese. There was no misairu 1 or 2. 
 
 <video autoplay loop muted>
   <source src="/videos/misairu.webm" type="video/webm">
