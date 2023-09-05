@@ -58,10 +58,6 @@ video {
   border-radius: 2rem;
 }
 
-pre {
-  display: flex;
-}
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
