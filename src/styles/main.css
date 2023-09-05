@@ -169,7 +169,6 @@ li {
 pre {
   position: relative;
   max-width: 100%;
-  display: flex;
   overflow-x: auto;
   padding: 1rem 0.75rem;
   border-radius: 0.25rem;
