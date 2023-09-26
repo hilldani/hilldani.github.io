@@ -3,7 +3,7 @@ layout: '../../layouts/Post.astro'
 title: How to eBPF
 image: /images/photography
 publishedAt: 2022-04-10
-category: 'eBPF'
+category: 'instrumentation'
 ---
 eBPF (extended Berkeley Packet filter) is a sandboxed runtime inside of the linux kernel. Here are some key open source repos that should be contributed to:
 

@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: Big O vs Reality
+title: CPI Flamegraphs
 image: /images/reality
 publishedAt: "2023-06-12"
 category: 'PMU'

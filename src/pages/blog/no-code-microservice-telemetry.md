@@ -3,7 +3,7 @@ layout: '../../layouts/Post.astro'
 title: No-code Microservice Telemetry
 image: /images/network
 publishedAt: "2023-02-09"
-category: 'eBPF'
+category: 'instrumentation'
 ---
 Microservices can be one of the most complex and convoluted architectures to wrap your head around. In a monolith you know exactly what is calling what and when, but in microservices a simple API request can traverse a multitude of services before returning. This makes it especially difficult to diagnose performance issues. 
 
