@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: ptrace power
+title: ptrace Power
 image: /images/code
 publishedAt: "2023-09-26"
 category: 'instrumentation'
@@ -46,4 +46,4 @@ Now we can start to see the raw assembly that any process in linux is executing.
 2. ymm = AVX256
 3. zmm = AVX512
 
-These can greatly increase the speed of cryptography and AI matrix multiplcations, but often it is hard to tell if you are using them. Thankfully, at the end of this trace we see `unpckhpd xmm0,xmm0` which means we are successfully using AVX128.
+These can greatly increase the speed of cryptography and AI matrix multiplications, but often it is hard to tell if you are using them. Thankfully, at the end of this trace we see `unpckhpd xmm0,xmm0` which means we are successfully using AVX128.
