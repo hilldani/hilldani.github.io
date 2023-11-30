@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/Post.astro'
 title: AWS m7i launch PMU deep dive
-image: /images/flame
+image: /images/intel_aws
 publishedAt: "2023-10-10"
 category: 'PMU'
 ---
