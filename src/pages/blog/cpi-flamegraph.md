@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: CPI Flamegraphs
+title: CPI flamegraphs
 image: /images/flame
 publishedAt: "2023-06-12"
 category: 'PMU'

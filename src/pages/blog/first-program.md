@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: My First Program
+title: My first program
 image: /images/moon
 publishedAt: "2020-04-018"
 category: 'Hobby'

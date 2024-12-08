@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: ptrace Power
+title: ptrace power
 image: /images/code
 publishedAt: "2023-09-26"
 category: 'instrumentation'

@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: No-code Microservice Telemetry
+title: No-code microservice telemetry
 image: /images/network
 publishedAt: "2023-02-09"
 category: 'instrumentation'

@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/Post.astro'
-title: Binary Layout
+title: Binary layout
 image: /images/chip
 publishedAt: 2024-08-18
 category: 'Performance'
