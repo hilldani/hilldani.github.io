@@ -15,5 +15,5 @@ Some software makes the conscious decision to not scale up and only scale out. A
 
 Most software lands somewhere in the middle and struggles scaling up. To evaluate why your program's performance is not scaling linearly as you add more cores you should look at the following:
 
-1. [perf c2c](https://man7.org/linux/man-pages/man1/perf-c2c.1.html) finds shared memory which can become contested if multiple cores and threads are trying to read it simultaneously
-1. [offcputime](https://github.com/iovisor/bcc/blob/master/tools/offcputime.py) finds locks which can cause threads to idle as they wait for the lock to be released.
+1. [perf c2c](https://man7.org/linux/man-pages/man1/perf-c2c.1.html) finds shared memory which can become contested if multiple cores and threads are trying to read it simultaneously. This requires metal vm's in AWS. For x86 it uses offcore PMU registers. For ARM it needs a newer linux perf binary (which can be built from source) so it can use [SPE](https://developer.arm.com/documentation/101136/22-1-3/MAP/Arm-Statistical-Profiling-Extension--SPE-) (Statistical Profiling Extension) which cannot give offcore information like HITM or remote DRAM % but can calculate latency of memory accesses which directly correlates to highly contended memory.
+1. [offcputime](https://github.com/iovisor/bcc/blob/master/tools/offcputime.py) finds locks which can cause threads to idle as they wait for the lock to be released. It uses eBPF so it only works on kernels compiled with eBPF enabled.
