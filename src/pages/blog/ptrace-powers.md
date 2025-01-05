@@ -3,7 +3,7 @@ layout: '../../layouts/Post.astro'
 title: ptrace power
 image: /images/code
 publishedAt: "2023-09-26"
-category: 'instrumentation'
+category: 'Instrumentation'
 ---
 ptrace is an ancient syscall built into the linux kernel. It is a bit of a magic wand. Through different parameters you can control other processes (memory, assembly, instruction pointer etc.). As an example of is power I am going to show you how to get an instruction mix of your entire system.
 

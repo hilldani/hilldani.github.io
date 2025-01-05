@@ -3,7 +3,7 @@ layout: "../../layouts/Post.astro"
 title: bpftrace super powers
 image: /images/ebpf
 publishedAt: 2024-12-14
-category: "instrumentation"
+category: "Instrumentation"
 ---
 
 [bpftrace](https://github.com/bpftrace/bpftrace) is a high-level tracing language for Linux. Sometimes you want to profile something very specific, there is no tool for it, and you don't want to write something complex. A quick bpftrace one-liner can save the day.
